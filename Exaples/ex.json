@@ -1,0 +1,104 @@
+[
+    {
+        "alimentationType": "Cavo a 12W",
+        "brand": "Amazon",
+        "description": "Amazon Alexa Spot modello 2024 sveglia intelligente",
+        "image_file_name": "61wZ61btZfL._AC_SL1001_.jpg",
+        "name": "Amazon Alex Spot",
+        "price": 64.99,
+        "type": "Electronics",
+        "warrantyMonths": 12,
+        "wished": false
+    },
+    {
+        "description": "Polo blu marchio desirè ",
+        "gender": "M",
+        "image_file_name": "55212-412-polo-cotone-lino-mezza-luna-rigata-malagrida01.jpg",
+        "material": "Cotton",
+        "name": "Polo blu desirè ",
+        "price": 39.99,
+        "size": "L",
+        "type": "Clothing",
+        "wished": true
+    },
+    {
+        "authorOrEditor": "Salani",
+        "description": "Harry potter e la camera dei segreti copertina borbida",
+        "image_file_name": "9788867155965.jpg",
+        "name": "Libro Harry Potter",
+        "pages": 336,
+        "price": 14.99,
+        "publisher": "S. Bartezzaghi",
+        "type": "PrintedMedia",
+        "typeP": "Book",
+        "wished": false
+    },
+    {
+        "authorOrEditor": "Chris Van Allsburg",
+        "description": "Libro Jumanji compertina rigida in pelle",
+        "image_file_name": "il_fullxfull.1746159440_thv6.jpg",
+        "name": "Libro Jumanji",
+        "pages": 1,
+        "price": 99.99,
+        "publisher": "Houghton Mifflin",
+        "type": "PrintedMedia",
+        "typeP": "Book",
+        "wished": true
+    },
+    {
+        "authorOrEditor": "Dino Buzzati",
+        "description": "Libro il deserto dei tartari copertina flessibile",
+        "image_file_name": "9788804735106_0_0_536_0_75.jpg",
+        "name": "Libro il deserto dei tartari",
+        "pages": 303,
+        "price": 16.49,
+        "publisher": "Mondadori",
+        "type": "PrintedMedia",
+        "typeP": "Book",
+        "wished": false
+    },
+    {
+        "alimentationType": "Cavo 1,5m a 100-240 volt",
+        "brand": "Dyson",
+        "description": "Lampada Dyson con bluetooth collegabile a tutti i dispositivi mobili",
+        "image_file_name": "294643-01.png.jpeg",
+        "name": "Lampada Dyson",
+        "price": 149.99,
+        "type": "Electronics",
+        "warrantyMonths": 12,
+        "wished": false
+    },
+    {
+        "alimentationType": " alimentatore a doppia porta USB-C da 35 W",
+        "brand": "Apple",
+        "description": "Macbook air 15 pollici da 16gb ram e 256gb di memoria",
+        "image_file_name": "mba13-skyblue-select-202503.jpeg",
+        "name": "Macbook air 15 inch",
+        "price": 1349.99,
+        "type": "Electronics",
+        "warrantyMonths": 24,
+        "wished": true
+    },
+    {
+        "description": "Polo rosa Lacoste ",
+        "gender": "F",
+        "image_file_name": "lacoste-pf5462_2r3-rosa-maglietta-donna-polo-piquet-stretch-slim-fit.jpg",
+        "material": "Cotton",
+        "name": "Polo rosa Lacoste",
+        "price": 89.99,
+        "size": "S",
+        "type": "Clothing",
+        "wished": false
+    },
+    {
+        "description": "Maglietta traspirante nera estremamente leggera e facile da lavare",
+        "gender": "U",
+        "image_file_name": "GORE-BIKE-WEAR-Maglietta-intima-sportiva-Uomo-Windstopper-0-1.jpg",
+        "material": "Poliester and Cotton",
+        "name": "Maglietta sportiva",
+        "price": 18.49,
+        "size": "M",
+        "type": "Clothing",
+        "wished": false
+    }
+]

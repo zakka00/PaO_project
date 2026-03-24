@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Icons/full.png</file>
+        <file>Icons/empty.png</file>
+        <file>Icons/plus.png</file>
+        <file>Icons/save.png</file>
+        <file>Icons/saveas.png</file>
+        <file>Icons/open.png</file>
+        <file>Icons/delete.png</file>
+        <file>Icons/clothes.png</file>
+        <file>Icons/electronics.png</file>
+        <file>Icons/printedmedia.png</file>
+        <file>Icons/logo.png</file>
+        <file>Icons/grid.png</file>
+        <file>Icons/vertical.png</file>
+        <file>Icons/close.png</file>
+        <file>Icons/edit.png</file>
+        <file>Icons/NoImage.png</file>
+    </qresource>
+</RCC>

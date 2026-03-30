@@ -15,9 +15,9 @@ EQ            = =
 CC            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
 CXX           = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
 DEFINES       = -DQT_NO_DEBUG -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB
-CFLAGS        = -pipe -O2 $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.0 -Wall -Wextra $(DEFINES)
-CXXFLAGS      = -pipe -stdlib=libc++ -O2 -std=gnu++1z $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.0 -Wall -Wextra $(DEFINES)
-INCPATH       = -I. -I. -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/AGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/System/Library/Frameworks/AGL.framework/Headers -I/opt/homebrew/share/qt/mkspecs/macx-clang -F/opt/homebrew/lib
+CFLAGS        = -pipe -O2 $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -mmacosx-version-min=14.0 -Wall -Wextra $(DEFINES)
+CXXFLAGS      = -pipe -stdlib=libc++ -O2 -std=gnu++1z $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -mmacosx-version-min=14.0 -Wall -Wextra $(DEFINES)
+INCPATH       = -I. -I. -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/System/Library/Frameworks/AGL.framework/Headers/ -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/System/Library/Frameworks/AGL.framework/Headers/ -I/opt/homebrew/share/qt/mkspecs/macx-clang -F/opt/homebrew/lib
 QMAKE         = /opt/homebrew/bin/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -37,9 +37,9 @@ MOVE          = mv -f
 TAR           = tar -cf
 COMPRESS      = gzip -9f
 DISTNAME      = e-commerce1.0.0
-DISTDIR = /Users/zakarialaoud/Desktop/e-commerce/e-commerce/.tmp/e-commerce1.0.0
+DISTDIR = /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/.tmp/e-commerce1.0.0
 LINK          = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
-LFLAGS        = -stdlib=libc++ -headerpad_max_install_names $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.0 -Wl,-rpath,@executable_path/../Frameworks -Wl,-rpath,/opt/homebrew/lib
+LFLAGS        = -stdlib=libc++ -headerpad_max_install_names $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -mmacosx-version-min=14.0 -Wl,-rpath,@executable_path/../Frameworks -Wl,-rpath,/opt/homebrew/lib
 LIBS          = $(SUBLIBS) -F/opt/homebrew/lib -framework QtWidgets -framework QtGui -framework AppKit -framework ImageIO -framework Metal -framework QtCore -framework IOKit -framework DiskArbitration -framework UniformTypeIdentifiers -framework AGL -framework OpenGL   
 AR            = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar cq
 RANLIB        = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib -s
@@ -442,7 +442,7 @@ DIST          = /opt/homebrew/share/qt/mkspecs/features/spec_pre.prf \
 		/opt/homebrew/share/qt/mkspecs/features/qt_config.prf \
 		/opt/homebrew/share/qt/mkspecs/macx-clang/qmake.conf \
 		/opt/homebrew/share/qt/mkspecs/features/spec_post.prf \
-		../.qmake.stash \
+		.qmake.stash \
 		/opt/homebrew/share/qt/mkspecs/features/exclusive_builds.prf \
 		/opt/homebrew/share/qt/mkspecs/features/mac/sdk.prf \
 		/opt/homebrew/share/qt/mkspecs/features/toolchain.prf \
@@ -512,14 +512,14 @@ TARGET        = e-commerce.app/Contents/MacOS/e-commerce
 
 ####### Custom Variables
 EXPORT_QMAKE_MAC_SDK = macosx
-EXPORT_QMAKE_MAC_SDK_VERSION = 15.2
+EXPORT_QMAKE_MAC_SDK_VERSION = 26.2
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
-EXPORT__QMAKE_STASH_ = /Users/zakarialaoud/Desktop/e-commerce/.qmake.stash
+EXPORT__QMAKE_STASH_ = /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/.qmake.stash
 EXPORT_VALID_ARCHS = arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
 EXPORT_ARCH_ARGS = $(foreach arch, $(if $(EXPORT_ARCHS), $(EXPORT_ARCHS), $(EXPORT_VALID_ARCHS)), -arch $(arch))
-EXPORT__PRO_FILE_ = /Users/zakarialaoud/Desktop/e-commerce/e-commerce/e-commerce.pro
+EXPORT__PRO_FILE_ = /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/e-commerce.pro
 
 
 include /opt/homebrew/Cellar/qt/6.9.1/share/qt/mkspecs/features/mac/sdk.mk
@@ -873,7 +873,7 @@ Makefile: e-commerce.pro /opt/homebrew/share/qt/mkspecs/macx-clang/qmake.conf /o
 		/opt/homebrew/share/qt/mkspecs/features/qt_config.prf \
 		/opt/homebrew/share/qt/mkspecs/macx-clang/qmake.conf \
 		/opt/homebrew/share/qt/mkspecs/features/spec_post.prf \
-		../.qmake.stash \
+		.qmake.stash \
 		/opt/homebrew/share/qt/mkspecs/features/exclusive_builds.prf \
 		/opt/homebrew/share/qt/mkspecs/features/mac/sdk.prf \
 		/opt/homebrew/share/qt/mkspecs/features/toolchain.prf \
@@ -1251,7 +1251,7 @@ Makefile: e-commerce.pro /opt/homebrew/share/qt/mkspecs/macx-clang/qmake.conf /o
 /opt/homebrew/share/qt/mkspecs/features/qt_config.prf:
 /opt/homebrew/share/qt/mkspecs/macx-clang/qmake.conf:
 /opt/homebrew/share/qt/mkspecs/features/spec_post.prf:
-../.qmake.stash:
+.qmake.stash:
 /opt/homebrew/share/qt/mkspecs/features/exclusive_builds.prf:
 /opt/homebrew/share/qt/mkspecs/features/mac/sdk.prf:
 /opt/homebrew/share/qt/mkspecs/features/toolchain.prf:
@@ -1322,6 +1322,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r e-commerce.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -1365,7 +1366,7 @@ compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
 moc_predefs.h: /opt/homebrew/share/qt/mkspecs/features/data/dummy.cpp
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -O2 -std=gnu++1z $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.0 -Wall -Wextra -dM -E -o moc_predefs.h /opt/homebrew/share/qt/mkspecs/features/data/dummy.cpp
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -pipe -stdlib=libc++ -O2 -std=gnu++1z $(EXPORT_ARCH_ARGS) -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk -mmacosx-version-min=14.0 -Wall -Wextra -dM -E -o moc_predefs.h /opt/homebrew/share/qt/mkspecs/features/data/dummy.cpp
 
 compiler_moc_header_make_all: moc_Filters.cpp moc_Homepage.cpp moc_SingleProductCreation.cpp moc_SingleProductEdit.cpp moc_Miniature.cpp moc_ProductsView.cpp moc_SingleProduct.cpp
 compiler_moc_header_clean:
@@ -1391,7 +1392,7 @@ moc_Filters.cpp: Headers/Graphics/Filters.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/qcheckbox.h \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/Filters.h -o moc_Filters.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/Filters.h -o moc_Filters.cpp
 
 moc_Homepage.cpp: Headers/Graphics/Homepage.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/QMainWindow \
@@ -1449,7 +1450,7 @@ moc_Homepage.cpp: Headers/Graphics/Homepage.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/QHBoxLayout \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/Homepage.h -o moc_Homepage.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/Homepage.h -o moc_Homepage.cpp
 
 moc_SingleProductCreation.cpp: Headers/Graphics/SingleProductCreation.h \
 		Headers/Logic/Product.h \
@@ -1478,7 +1479,7 @@ moc_SingleProductCreation.cpp: Headers/Graphics/SingleProductCreation.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/qcombobox.h \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/SingleProductCreation.h -o moc_SingleProductCreation.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/SingleProductCreation.h -o moc_SingleProductCreation.cpp
 
 moc_SingleProductEdit.cpp: Headers/Graphics/SingleProductEdit.h \
 		Headers/Logic/Product.h \
@@ -1508,7 +1509,7 @@ moc_SingleProductEdit.cpp: Headers/Graphics/SingleProductEdit.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/QHBoxLayout \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/SingleProductEdit.h -o moc_SingleProductEdit.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/SingleProductEdit.h -o moc_SingleProductEdit.cpp
 
 moc_Miniature.cpp: Headers/Graphics/Miniature.h \
 		Headers/Logic/Product.h \
@@ -1530,7 +1531,7 @@ moc_Miniature.cpp: Headers/Graphics/Miniature.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/qpushbutton.h \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/Miniature.h -o moc_Miniature.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/Miniature.h -o moc_Miniature.cpp
 
 moc_ProductsView.cpp: Headers/Graphics/ProductsView.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
@@ -1556,7 +1557,7 @@ moc_ProductsView.cpp: Headers/Graphics/ProductsView.h \
 		/opt/homebrew/lib/QtCore.framework/Headers/qfile.h \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/ProductsView.h -o moc_ProductsView.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/ProductsView.h -o moc_ProductsView.cpp
 
 moc_SingleProduct.cpp: Headers/Graphics/SingleProduct.h \
 		/opt/homebrew/lib/QtWidgets.framework/Headers/QWidget \
@@ -1574,7 +1575,7 @@ moc_SingleProduct.cpp: Headers/Graphics/SingleProduct.h \
 		/opt/homebrew/lib/QtCore.framework/Headers/qjsonobject.h \
 		moc_predefs.h \
 		/opt/homebrew/share/qt/libexec/moc
-	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/e-commerce/e-commerce/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/Users/zakarialaoud/Desktop/e-commerce/e-commerce -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/16/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/SingleProduct.h -o moc_SingleProduct.cpp
+	/opt/homebrew/share/qt/libexec/moc $(DEFINES) --include /Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project/moc_predefs.h -I/opt/homebrew/share/qt/mkspecs/macx-clang -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/Users/zakarialaoud/Desktop/Progetti_vecchi/C++/PaO_project -I/opt/homebrew/lib/QtWidgets.framework/Headers -I/opt/homebrew/lib/QtGui.framework/Headers -I/opt/homebrew/lib/QtCore.framework/Headers -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/17/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.2.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/opt/homebrew/lib Headers/Graphics/SingleProduct.h -o moc_SingleProduct.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:

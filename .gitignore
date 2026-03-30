@@ -1,0 +1,44 @@
+915"}
+# Build
+build/
+cmake-build-/
+CMakeFiles/
+CMakeCache.txt
+Makefile
+cmake_install.cmake
+
+# Qt
+.pro.user
+.qmake.stash
+moc_.cpp
+moc_.h
+qrc_.cpp
+ui_*.h
+
+# Compilati
+*.o
+*.obj
+*.so
+*.a
+*.out
+
+# Executables
+ecommerce
+*.app
+
+# macOS
+.DS_Store
+*.dSYM/
+*.xcworkspace
+*.xcuserdata
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+.ide
+
+#cpp
+*.cpp
+*.h
